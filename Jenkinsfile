@@ -5,5 +5,5 @@ terraformPipeline(
     tfWorkspace: 'default',
     gitRepo: 'https://github.com/GowshikM-2005/Terraform.git',
     gitBranch: 'main',
-    autoApply: false  // change to true if you want auto apply
+    autoApply: true  // change to true if you want auto apply
 )

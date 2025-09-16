@@ -1,9 +1,10 @@
-provider "kubernetes" {
-  config_path = var.kubeconfig_path
+variable "kubeconfig_path" {
+  description = "Path to kubeconfig file"
+  type        = string
 }
 
-variable "kubeconfig_path" {
-  default = "" # will be overridden by env var
+provider "kubernetes" {
+  config_path = var.kubeconfig_path
 }
 
 resource "kubernetes_pod" "example" {

@@ -3,8 +3,7 @@
 terraformPipeline(
     tfVersion: '1.6.6',
     tfWorkspace: 'default',
-    awsCredsId: 'aws-credentials-id',
-    gitRepo: 'https://github.com/your-org/terraform-infra.git',
+    gitRepo: 'https://github.com/GowshikM-2005/Terraform.git',
     gitBranch: 'main',
-    autoApply: false   // change to true if you want auto apply
+    autoApply: false  // change to true if you want auto apply
 )

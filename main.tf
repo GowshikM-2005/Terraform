@@ -1,4 +1,10 @@
-provider "kubernetes"  {}
+provider "kubernetes" {
+  config_path = var.kubeconfig_path
+}
+
+variable "kubeconfig_path" {
+  default = "" # will be overridden by env var
+}
 
 resource "kubernetes_pod" "example" {
  metadata {

@@ -1,6 +1,4 @@
-provider "kubernetes"  {
-  config_context = "kind-observe"
-}
+provider "kubernetes"  {}
 
 resource "kubernetes_pod" "example" {
  metadata {
